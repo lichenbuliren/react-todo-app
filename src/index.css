@@ -1,0 +1,58 @@
+/* REST */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* TodoApp */
+.todo-app {
+  background-color: #4CA4D0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: linear-gradient(#4CA4D0 0%, #E4EDE8 100%);
+  padding: 2vw;
+  box-sizing: border-box;
+}
+
+/* TodoInput */
+.todo-input {
+  height: 10vw;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.todo-input input {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  padding: 0 4px;
+  border-radius: 4px;
+  font-size: 6vw;
+  background-color: rgba(49, 99, 124, .8);
+  color: #fff;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* TodoList */
+.todo-list {
+  position: absolute;
+  box-sizing: border-box;
+  top: 14vw;
+  left: 2vw;
+  right: 2vw;
+  bottom: 4vw;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+.todo-list .empty-row {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  top: 20%;
+}

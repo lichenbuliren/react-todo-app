@@ -1,19 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import ShoppingList from './ShoppingList';
-import Clock from './Clock';
-
-class Todo extends Component {
-  render() {
-    return (
-      <ShoppingList name="lichenbuliren"/>
-    )
-  }
-}
+import TodoApp from './TodoApp';
 
 ReactDOM.render(
-  <Clock />,
+  <TodoApp />,
   document.getElementById('root')
 );
