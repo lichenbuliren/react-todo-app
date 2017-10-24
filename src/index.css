@@ -27,9 +27,9 @@
   outline: none;
   height: 100%;
   width: 100%;
-  padding: 0 4px;
+  padding: 0 10px;
   border-radius: 4px;
-  font-size: 6vw;
+  font-size: 4vw;
   background-color: rgba(49, 99, 124, .8);
   color: #fff;
   box-sizing: border-box;
@@ -37,7 +37,7 @@
 }
 
 /* TodoList */
-.todo-list {
+.todo-list-wrapper {
   position: absolute;
   box-sizing: border-box;
   top: 14vw;
@@ -49,10 +49,50 @@
   overflow-x: hidden;
 }
 
+.todo-list {
+  
+}
+
 .todo-list .empty-row {
   position: absolute;
   text-align: center;
   color: #fff;
   width: 100%;
   top: 20%;
+}
+
+.todo-item {
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  padding: 10px;
+  display: flex;
+  flex: 1;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+}
+
+.item-value {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item-checked {
+  padding-right: 10px;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.item-checked input {
+  width: 16px;
+  height: 16px;
+}
+
+.todo-item .item-completed {
+  text-decoration: line-through;
 }

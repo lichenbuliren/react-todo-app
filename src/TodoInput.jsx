@@ -6,16 +6,17 @@ export default class TodoInput extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      input: ''
-    };
-
     this.handleChange = this.handleChange.bind(this);
     this.handleKeyup = this.handleKeyup.bind(this);
   }
 
   handleKeyup(e) {
-    
+    if (e.keyCode === 13) {
+      this.props.onSubmit(e.target.value);
+      this.setState({
+        input: ''
+      })
+    }
   }
   
   handleChange(e) {
